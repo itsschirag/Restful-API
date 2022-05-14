@@ -1,5 +1,5 @@
 # Restful-API
-'''
+```
 const express = require("express");
 const mongoose= require("mongoose");
 const ejs= require("ejs");
@@ -64,4 +64,4 @@ app.route("/articles/:articleTitle")
 app.listen(3000,function(){
   console.log("serve started on port 3000");
 });
-'''
+```

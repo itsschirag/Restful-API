@@ -14,7 +14,9 @@ const articleSchema =mongoose.Schema({
   content:String
 });
 const Article = mongoose.model("Article",articleSchema );
+```
 /////////////////////////////////////////// Requests Targetting All Articles////////////////////////////
+```
 app.route("/articles")
 .get(function(req, res){
   Article.find(function(err, foundArticles){
@@ -47,7 +49,9 @@ if(!err){
     }
   });
 });
+```
 /////////////////////////////////////////// Requests Targettiting A specific Article////////////////////////////
+```
 app.route("/articles/:articleTitle")
 .get(function(req, res){
   let Title =req.params.articleTitle;
